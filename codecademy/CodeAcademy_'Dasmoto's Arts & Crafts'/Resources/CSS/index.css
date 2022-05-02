@@ -1,0 +1,76 @@
+
+html{
+  background-color: gainsboro;
+}
+
+body {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 100px;
+  margin-right: 350px;
+  margin-left: 350px;
+  margin-bottom: 100px;
+  border: 1px solid red;
+}
+
+h1 {
+  width: 98%;
+  overflow: hidden;
+  background-image: url("/Users/renatocampos/Desktop/Projetos /CodeAcademy_'Dasmoto's Arts & Crafts'/Resources/Images/pattern.jpeg");
+  margin-top: 50px;
+  margin-left: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+  display:inline-block;
+  vertical-align: middle;
+
+}
+
+h1, 
+h2, 
+h3, 
+p {
+  font-family: "Helvetica", sans-serif;
+}
+
+.conteiner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.conteiner h3 {
+  color: white;
+  font-size: 32px;
+  padding-left: 10px;
+}
+
+.conteiner strong {
+  font-size: 25px;
+}
+
+.conteiner p {
+  font-size: 20px;
+}
+
+.conteiner a {
+  color: blue;
+  font-weight: bold;
+}
+#green {
+  background-color: mediumspringgreen;
+}
+
+#red {
+  background-color: lightcoral;
+}
+
+#blue {
+  background-color: skyblue;
+}
+
+
+  

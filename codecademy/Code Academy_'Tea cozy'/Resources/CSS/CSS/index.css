@@ -1,0 +1,104 @@
+* {
+
+    opacity: 0.9;
+}
+
+body {
+    background-color: black;
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 69px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.logo {
+    display: inline-flex;
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+}
+
+.header ul {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.header ul li a{
+    text-decoration: underline;
+    color: seashell;
+}
+
+.conteiner{
+    margin: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-image: url("/Users/renatocampos/Desktop/Projetos /Code Academy_'Tea cozy'/Resources/Images/img-mission-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    background-color: black;
+    width: 100%;
+}
+
+.tea_of_the_mounth {
+    margin-top: 5%;
+}
+
+.tea_of_the_mounth_images {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media{
+ margin: 0 2%;
+}
+
+#image {
+ height: 200px;
+ width: 300px;
+}
+
+.location {
+    background-image: url("/Users/renatocampos/Desktop/Projetos /Code Academy_'Tea cozy'/Resources/Images/img-locations-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 4%;
+}
+.location_conteiner{
+    background-color: black;
+    opacity: 1;
+    flex-basis: 300px;
+    margin: 20px;
+}
+
+#lacations {
+ width: 100%;
+}
