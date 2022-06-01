@@ -3,49 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/CSS" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- headings-->
-  <div>
-    Features
-    Company
-    Careers
-    About
-    <a href="#" target="_blank">Login</a>
-    <a href="#" target="_blank">Register</a>
+  <div class="menu">
+    <img id='logo'src="./images/logo.svg" alt="company logo">
+    <ul>
+      <label for="featuresbtn">
+        <li id="menu-features">Features <img src="./images/icon-arrow-up.svg" alt=""></li>
+      </label>
+      <label for="companybtn">
+        <li id="menu-company">Company <img src="./images/icon-arrow-up.svg" alt=""></li>
+      </label>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+    <a href="#" target="_blank" id="register">Register</a>
+    <a href="#" target="_blank" id="login">Login</a>
+  </div>
+  <div id="dropdown">
+    <div id="features">
+      <ul>
+        <li><img src="./images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+        <li><img src="./images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+        <li><img src="./images/icon-reminders.svg" alt=""><a href="#">Remainders</a></li>
+        <li><img src="./images/icon-planning.svg" alt=""><a href="#">Planing</a></li>
+      </ul>
+    </div>
+    <div id="company">
+      <ul>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
   </div>
 
-
-  <div style="display: inline;">
-    <h1>Make remote work</h1>
-    <p>Get your team in sync, no matter your location. Streamline processes, 
-      create team rituals, and watch productivity soar.</p>
-  </div>
-
-  <a href="#" target="_blank">Learn more</a>
-
-  <div>
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
+  <div class="body">
+    <div class="main_text">
+      <h1>Make <br> remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <a href="#" target="_blank">Learn more</a>
+      <div class="partners">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="image">
+      <img src="./images/image-hero-desktop.png" alt="man with computer and geometrical shapes">
+    </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Renato Dourado</a>.
   </div>
-
+<script src="./script.js"></script>
 </body>
 </html>
