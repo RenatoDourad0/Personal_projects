@@ -1,0 +1,144 @@
+/* ## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700 */
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+  background-position: top left, bottom right;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+
+header {
+padding: 70px 100px;
+padding-bottom: 20px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+
+}
+#hero {
+  width: 50%;
+  min-width: 340px;
+  display: flex;
+  flex-flow: column wrap;
+}
+#hero h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3em;
+  width: 80%;
+}
+#hero p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+#evaluations {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.stars-block {
+  width: fit-content;
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 15px;
+  padding: 15px 25px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+#img-block {
+  display: inline-block;
+  min-width: 110px;
+  text-align: center;
+}
+.stars-block span {
+  margin-left: 10px;
+}
+#stars-top {
+  align-self: flex-start;
+  margin-top: 80px;
+}
+#stars-middle {
+  align-self: center;
+}
+#stars-bottom {
+  align-self: flex-end;
+}
+#statements {
+  padding: 25px;
+  display: flex;
+  flex-flow: row wrap;
+
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.statement {
+  width: 25%;
+  min-width: 300px;
+  margin: 40px 20px;
+  padding: 20px;
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  border-radius: 10px;
+}
+#statment-one {
+  margin-top: 0;
+}
+
+#statment-three {
+  margin-bottom: 0;
+}
+.statment-heading div {
+  width: 60%;
+  display: inline-block;  
+  font-size: 0.7em;
+  margin-left: 20px;
+
+}
+.statment-heading img {
+  display: inline-block;
+  width: 25%;
+  border-radius: 50px;
+  vertical-align:middle;
+}
+.pink {
+  color: hsl(333, 80%, 67%);
+}
+.statment-heading p {
+  line-height: 20px;
+
+}
+.attribution {
+  font-size: 11px;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
