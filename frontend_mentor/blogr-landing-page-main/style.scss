@@ -1,0 +1,229 @@
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// - Light red (CTA text): hsl(356, 100%, 66%)
+// - Very light red (CTA hover background): hsl(355, 100%, 74%)
+// - Very dark blue (headings): hsl(208, 49%, 24%)
+
+// ### Neutral
+
+// - White (text): hsl(0, 0%, 100%)
+// - Grayish blue (footer text): hsl(240, 2%, 79%)
+// - Very dark grayish blue (body copy): hsl(207, 13%, 34%)
+// - Very dark black blue (footer background): hsl(240, 10%, 16%)
+
+// ### Gradient
+
+// Background gradient - Intro/CTA mobile nav:
+
+// - Very light red: hsl(13, 100%, 72%)
+// - Light red: hsl(353, 100%, 62%)
+
+// Background gradient - body:
+
+// - Very dark gray blue: hsl(237, 17%, 21%)
+// - Very dark desaturated blue: hsl(237, 23%, 32%)
+
+// font-family: 'Epilogue', sans-serif; - Weights: 300, 600
+// font-family: 'Ubuntu', sans-serif; - Weights: 400, 500, 700
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+header {
+  background-image: url('./images/bg-pattern-intro-mobile.svg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 75vh;
+  border-bottom-left-radius: 100px;
+  #logo-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8vh 4vh 2vh 4vh;
+  }
+  #background {
+    position: absolute;
+    top: 0px;
+    height: 75vh;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 2.0em;
+      line-height: 1.5em;
+      color: white;
+      margin: 20% 20px 5% 20px;
+    }
+    p {
+      line-height: 1.5em;
+      color: white;
+      margin: 0 30px 10% 30px;
+    }
+  }
+  #hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #start {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px;
+    color: hsl(355, 100%, 74%);
+    font-weight: 700;
+  }
+  #learn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+  }
+}
+
+nav {
+  display: none;
+  flex-flow: column nowrap;
+  background-color: white;
+  margin: 5% 5vw;
+  z-index: 2;
+  box-shadow: 2px 2px 2px;
+  border-radius: 10px;
+  padding: 5% 10%;
+  line-height: 2em;
+  text-align: center;
+  .menu-expand {
+    display: none;
+    flex-flow: column nowrap;
+    background-color: hsl(240, 2%, 79%);
+    border-radius: 10px;
+    padding: 10% 0;
+    line-height: 2em;
+    & a {
+      text-decoration: none;
+      color: hsl(207, 13%, 34%)
+    }
+  }
+  hr {
+    width: 70%;
+    height: 1px;
+    background-color: hsl(207, 13%, 34%);
+    border: none;
+  }
+  #btns {
+    display: flex;
+    flex-flow: column nowrap;
+    #login {
+      border: none;
+      background: none;
+      margin-bottom: 5%;
+    }
+    #singup {
+      width: 40%;
+      margin: auto;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+     background-image:  linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+  }
+}
+
+main {
+  z-index: 1;
+  text-align: center;
+  margin-top: 50px;
+  h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: hsl(207, 13%, 34%);
+    margin-bottom: 20px;
+  }
+  img {
+    max-width: 350px;
+    margin: 20px 0;
+  }
+  p {
+    color: hsl(207, 13%, 34%);
+    padding: 0 10%;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+  }
+  #blue-background {
+    background-image: url('./images/bg-pattern-circles.svg');
+    background-position: ;
+  }
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+    a { color: hsl(228, 45%, 44%); 
+    }
+}
+@media screen and (min-width: 351px) {
+
+}
