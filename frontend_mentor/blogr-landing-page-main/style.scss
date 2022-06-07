@@ -75,6 +75,7 @@ table {
     border-spacing: 0;
 }
 
+
 body {
   font-size: 16px;
   font-family: 'Epilogue', sans-serif;
@@ -213,12 +214,58 @@ main {
     line-height: 1.2em;
     margin-bottom: 40px;
   }
+  #blue-div {
+    background-color: hsl(208, 49%, 24%);
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 80vh;
+    margin-top: 200px;
+    z-index: -1;
+    
+  }
   #blue-background {
     background-image: url('./images/bg-pattern-circles.svg');
-    background-position: ;
+    background-position: 2;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    img {
+      margin-top: -150px;
+    }
+    h2, p {
+      color: white;
+      line-height: 1.4em;
+    }
+    p {
+      font-weight: normal;
+    }
   }
 }
 
+footer {
+  background-color: hsl(237, 23%, 32%);;
+  height: 75vh;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    justify-self: flex-start;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    line-height: 1.5em;
+    font-weight: 100;
+  }
+  .highlight {
+    font-weight: 700;
+  }
+}
 .attribution { 
   font-size: 11px; text-align: center; 
     a { color: hsl(228, 45%, 44%); 

@@ -238,9 +238,70 @@ main p {
   margin-bottom: 40px;
 }
 
+main #blue-div {
+  background-color: #1f3f5b;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 80vh;
+  margin-top: 200px;
+  z-index: -1;
+}
+
 main #blue-background {
   background-image: url("./images/bg-pattern-circles.svg");
-  background-position: center;
+  background-position: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+main #blue-background img {
+  margin-top: -150px;
+}
+
+main #blue-background h2, main #blue-background p {
+  color: white;
+  line-height: 1.4em;
+}
+
+main #blue-background p {
+  font-weight: normal;
+}
+
+footer {
+  background-color: #3f4164;
+  height: 75vh;
+  border-bottom-left-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer img {
+  justify-self: flex-start;
+}
+
+footer .footer-link {
+  text-decoration: none;
+  color: white;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+footer .highlight {
+  font-weight: 700;
 }
 
 .attribution {
