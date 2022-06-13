@@ -135,6 +135,9 @@ header {
     margin-right: 20px;
     color: hsl(355, 100%, 74%);
     font-weight: 700;
+    &:hover {
+      cursor: pointer;
+    }
   }
   #learn {
     padding: 10px 20px;
@@ -143,6 +146,9 @@ header {
     background-color: transparent;
     color: white;
     font-weight: 700;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -172,6 +178,11 @@ nav {
       color: hsl(207, 13%, 34%)
     }
   }
+  #product-btn, #company-btn, #connect-btn {
+    &:hover{
+      cursor: pointer;
+    }
+  }
   hr {
     width: 70%;
     height: 1px;
@@ -185,6 +196,9 @@ nav {
       border: none;
       background: none;
       margin-bottom: 5%;
+      &:hover {
+        cursor: pointer;
+      }
     }
     #singup {
       width: 40%;
@@ -193,6 +207,9 @@ nav {
       border: none;
       border-radius: 10px;
      background-image:  linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+     &:hover {
+      cursor: pointer;
+    }
     }
   }
 }
@@ -371,11 +388,13 @@ footer {
   #menu-btn {
     display: none;
   }
+  main #heading {
+    margin-bottom: 50px;
+  }
   #conteiner1 {
     display: flex;
     flex-direction: row-reverse;
     height: 400px;
-    
     #img-conteiner {
       z-index: -1;
       width: 700px;
@@ -407,7 +426,6 @@ footer {
       background-position: left;
       background-size: 80%;
       img {
-        height: 500px;
         margin-top: -30px;
       }
       #text-conteiner {

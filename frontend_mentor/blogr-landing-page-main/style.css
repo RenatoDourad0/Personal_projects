@@ -139,6 +139,10 @@ header #start {
   font-weight: 700;
 }
 
+header #start:hover {
+  cursor: pointer;
+}
+
 header #learn {
   padding: 10px 20px;
   border-radius: 20px;
@@ -146,6 +150,10 @@ header #learn {
   background-color: transparent;
   color: white;
   font-weight: 700;
+}
+
+header #learn:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -185,6 +193,10 @@ nav .menu-expand a {
   color: #4b5862;
 }
 
+nav #product-btn:hover, nav #company-btn:hover, nav #connect-btn:hover {
+  cursor: pointer;
+}
+
 nav hr {
   width: 70%;
   height: 1px;
@@ -208,6 +220,10 @@ nav #btns #login {
   margin-bottom: 5%;
 }
 
+nav #btns #login:hover {
+  cursor: pointer;
+}
+
 nav #btns #singup {
   width: 40%;
   margin: auto;
@@ -216,6 +232,10 @@ nav #btns #singup {
   border-radius: 10px;
   background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
   background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+}
+
+nav #btns #singup:hover {
+  cursor: pointer;
 }
 
 main {
@@ -428,6 +448,9 @@ footer #product .end-tag, footer #company .end-tag, footer #connect .end-tag {
   #menu-btn {
     display: none;
   }
+  main #heading {
+    margin-bottom: 50px;
+  }
   #conteiner1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -482,7 +505,6 @@ footer #product .end-tag, footer #company .end-tag, footer #connect .end-tag {
     background-size: 80%;
   }
   #blue-div #blue-background img {
-    height: 500px;
     margin-top: -30px;
   }
   #blue-div #blue-background #text-conteiner {
