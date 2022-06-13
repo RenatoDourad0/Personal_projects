@@ -4,36 +4,43 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## Table of contents
 
+- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [My process](#my-process)
   - [Built with](#built-with)
-  - [Author](#author)
+- [Author](#author)
+
+
+## Overview
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the section depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
+
 
 ### Screenshot
+![](./screenshot.png)
 
-![Screenshot](./images/Captura%20de%20Tela%202022-06-05%20%C3%A0s%2009.48.45.png)
+
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
+
+## My process
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
+Renato Dourado
 
