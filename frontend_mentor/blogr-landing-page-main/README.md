@@ -23,14 +23,14 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+![](./design/blogr-mobile-1.png)
+![](./design/blogr-mobile-2.png)
+![](./design/blurg-mobile-3.png)
+
+<hr>
 
 ![](./design/blogr-desktop-1.png)
 ![](./design/blogr-desktop-2.png)  
-
-<hr>
-  ![](./design/blogr-mobile-1.png)
-![](./design/blogr-mobile-2.png)
-![](./design/blurg-mobile-3.png)
 
 
 ### Links
