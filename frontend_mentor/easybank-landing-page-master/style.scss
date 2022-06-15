@@ -1,0 +1,76 @@
+// reset
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+// SPECS ->
+
+// layout:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// Colors:
+// Primary
+// - Dark Blue: hsl(233, 26%, 24%)
+// - Lime Green: hsl(136, 65%, 51%)
+// - Bright Cyan: hsl(192, 70%, 51%)
+// Neutral
+// - Grayish Blue: hsl(233, 8%, 62%)
+// - Light Grayish Blue: hsl(220, 16%, 96%)
+// - Very Light Gray: hsl(0, 0%, 98%)
+// - White: hsl(0, 0%, 100%)
+
+// Typography:
+// - Font size: 18px
+// - Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+// - Weights: 300, 400, 700
+
+
+// Variables ->
+
+// primary colors
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+
+// neutral colors
+$greyish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+
+// Mobile design declarations -> 
+
+html {
+  font-size: 18px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template: repeat(50, 1fr) / repeat(10, 1fr);
+}
