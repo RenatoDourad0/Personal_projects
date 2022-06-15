@@ -26,7 +26,6 @@ Users should be able to:
 ![](screeshot-intro-section.png)
 
 
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
