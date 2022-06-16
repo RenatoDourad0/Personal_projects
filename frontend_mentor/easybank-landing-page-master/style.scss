@@ -100,21 +100,23 @@ body {
   }
   .button {
     background-image: linear-gradient(to right, $lime-green, $bright-cyan);
-    padding: 10px 40px;
     border-radius: 20px;
     color: $white;
     border: none;
-    margin-top: 50px
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
   }
   // js togle
+  .block {
+    display: block;
+  }
+  .none {
+    display: none;
+  }
+}
 
-}
-.block {
-  display: block;
-}
-.none {
-  display: none;
-}
 nav {
   position: absolute;
   top: 59px;
@@ -144,6 +146,10 @@ nav {
     padding: 10px 0;
     text-decoration: none;
     color: $dark-blue;
+    &:hover {
+      border-bottom: 5px solid $lime-green;
+      border-radius: 5px;
+    }
    }
 }
 
@@ -157,7 +163,7 @@ header {
     display: flex;
     justify-content: space-between;
     #logo {
-      width: auto;
+      width: fit-content;
     }
     #menu-icon {
       &:hover{
@@ -202,10 +208,7 @@ header {
     button {
       width: 50%;
       height: 45px;
-      margin-bottom: 50px;
-      &:hover{
-        cursor: pointer;
-      }
+      margin: 50px 0;
     }
   }
   }
@@ -246,7 +249,6 @@ main {
       max-width: 305px;
       margin: auto;
       margin-bottom: 20px;
-      box-shadow: .01px .01px 5px;
       border: none;
       border-radius: 6px;
       padding-bottom:30px;
@@ -265,6 +267,10 @@ main {
       h4 {
         text-align: left;
         padding: 3px 5%;
+        &:hover {
+          color: $lime-green;
+          cursor: pointer;
+        }
       }
       p {
         text-align: left;
@@ -277,20 +283,25 @@ footer {
   grid-area: 10 / 1 / 12 / 6;
   background-color: $dark-blue;
   #icons {
-    grid-area: 10 / 2 / 11 / 5;
+    // grid-area: 10 / 2 / 11 / 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin-top: 70px;
-    img {
+    margin-top: 70px;
+    .logo {
       margin: 40px 0;
+      filter:  invert(100%) brightness(100%)
     }
     #icon-line {
       margin-bottom: 30px;
       img {
         width: 30px;
         margin: 0 6px;
+        &:hover {
+          filter:  brightness(0) saturate(100%) invert(98%) sepia(40%) saturate(6243%) hue-rotate(60deg) brightness(89%) contrast(83%);
+          cursor: pointer;
+        }
       }
     }
   }
@@ -310,6 +321,10 @@ footer {
         color: $white;
         font-size: 0.8rem;
         line-height: 2rem;
+        &:hover {
+          color: $lime-green;
+          cursor: pointer;
+        }
       }
     }
     button {
@@ -356,11 +371,12 @@ footer {
   header {
     height: fit-content;
     #top-line {
-      padding: 30px 5%;
+      padding: 20px 5%;
       background-color: $white;
-      z-index: 1;
+      z-index: 2;
       #logo {
         width: auto;
+        height: auto;
       }
       #menu-icon {
         display: none;
@@ -387,12 +403,13 @@ footer {
         // grid-area: 2 / 1 / 4 / 6;
         background-image: none;
         width: 70%;
-        height: 600px;   
-        overflow-y: visible;     
+        height: 900px;   
+        overflow-y: visible;
         img {
           right: -600px;
           top: -130px;
           z-index: 1;
+          // clip-path: inset( -100vw -100vw -100px -100vw)
         }
       }
       #hero-content {
@@ -455,7 +472,7 @@ footer {
         text-align: left;
         width: 100%;
         margin-bottom: 30px;
-        padding-left: 10px;
+        // padding-left: 20px;
       }
       .article {
         max-width: 20%;
@@ -470,28 +487,33 @@ footer {
     grid-area: 5 / 1 / 5 / 6;
     display: flex;
     width: 100%;
-    height: 60vh;
-    flex-flow: row wrap;
+    height: 30vh;
+    flex-flow: row nowrap;
   #icons {
     width: 20vw;
+    justify-self: flex-start;
+    margin-top: 20px;
+    .logo {
+    }
   }
   #links {
-    width: 80vw;
+    width: 50vw;
     display: flex;
-    flex-direction: row nowrap;
-    justify-content: flex-end;
-    align-content: center;
+    flex-direction: row wrap;
+    // justify-content: flex-end;
+    // align-content: center;
   }
   #links-column {
     display: flex;
     flex-direction: column wrap;
-    max-height: 80px;
+    // max-height: 80px;
   }
   .button {
 
   }
   sub {
     margin-bottom: 0;
+    color: wheat;
   }
   #atribition {
     align-self: center;

@@ -73,18 +73,21 @@ body span {
 body .button {
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
-  padding: 10px 40px;
   border-radius: 20px;
   color: white;
   border: none;
-  margin-top: 50px;
 }
 
-.block {
+body .button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+body .block {
   display: block;
 }
 
-.none {
+body .none {
   display: none;
 }
 
@@ -123,6 +126,11 @@ nav {
   color: #2d314d;
 }
 
+#nav-links a:hover {
+  border-bottom: 5px solid #31d35c;
+  border-radius: 5px;
+}
+
 header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -148,7 +156,9 @@ header #top-line {
 }
 
 header #top-line #logo {
-  width: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 header #top-line #menu-icon:hover {
@@ -219,11 +229,7 @@ header #hero-conteiner #hero-content {
 header #hero-conteiner #hero-content button {
   width: 50%;
   height: 45px;
-  margin-bottom: 50px;
-}
-
-header #hero-conteiner #hero-content button:hover {
-  cursor: pointer;
+  margin: 50px 0;
 }
 
 main {
@@ -287,8 +293,6 @@ main #articles .article {
   max-width: 305px;
   margin: auto;
   margin-bottom: 20px;
-  -webkit-box-shadow: .01px .01px 5px;
-          box-shadow: .01px .01px 5px;
   border: none;
   border-radius: 6px;
   padding-bottom: 30px;
@@ -313,6 +317,11 @@ main #articles .article h4 {
   padding: 3px 5%;
 }
 
+main #articles .article h4:hover {
+  color: #31d35c;
+  cursor: pointer;
+}
+
 main #articles .article p {
   text-align: left;
 }
@@ -327,11 +336,6 @@ footer {
 }
 
 footer #icons {
-  -ms-grid-row: 10;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: 10 / 2 / 11 / 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,10 +349,13 @@ footer #icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 70px;
 }
 
-footer #icons img {
+footer #icons .logo {
   margin: 40px 0;
+  -webkit-filter: invert(100%) brightness(100%);
+          filter: invert(100%) brightness(100%);
 }
 
 footer #icons #icon-line {
@@ -358,6 +365,12 @@ footer #icons #icon-line {
 footer #icons #icon-line img {
   width: 30px;
   margin: 0 6px;
+}
+
+footer #icons #icon-line img:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(98%) sepia(40%) saturate(6243%) hue-rotate(60deg) brightness(89%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(98%) sepia(40%) saturate(6243%) hue-rotate(60deg) brightness(89%) contrast(83%);
+  cursor: pointer;
 }
 
 footer #links {
@@ -397,6 +410,11 @@ footer #links #links-column a {
   color: white;
   font-size: 0.8rem;
   line-height: 2rem;
+}
+
+footer #links #links-column a:hover {
+  color: #31d35c;
+  cursor: pointer;
 }
 
 footer #links button {
@@ -453,12 +471,13 @@ footer .attribution a {
     height: fit-content;
   }
   header #top-line {
-    padding: 30px 5%;
+    padding: 20px 5%;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
   }
   header #top-line #logo {
     width: auto;
+    height: auto;
   }
   header #top-line #menu-icon {
     display: none;
@@ -490,7 +509,7 @@ footer .attribution a {
   header #hero-conteiner #hero-img {
     background-image: none;
     width: 70%;
-    height: 600px;
+    height: 900px;
     overflow-y: visible;
   }
   header #hero-conteiner #hero-img img {
@@ -572,7 +591,6 @@ footer .attribution a {
     text-align: left;
     width: 100%;
     margin-bottom: 30px;
-    padding-left: 10px;
   }
   main #articles .article {
     max-width: 20%;
@@ -590,29 +608,26 @@ footer .attribution a {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 60vh;
+    height: 30vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
   }
   footer #icons {
     width: 20vw;
+    justify-self: flex-start;
+    margin-top: 20px;
   }
   footer #links {
-    width: 80vw;
+    width: 50vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-line-pack: center;
-        align-content: center;
+        -ms-flex-direction: row wrap;
+            flex-direction: row wrap;
   }
   footer #links-column {
     display: -webkit-box;
@@ -622,10 +637,10 @@ footer .attribution a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column wrap;
             flex-direction: column wrap;
-    max-height: 80px;
   }
   footer sub {
     margin-bottom: 0;
+    color: wheat;
   }
   footer #atribition {
     -ms-flex-item-align: center;
