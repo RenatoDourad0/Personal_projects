@@ -185,7 +185,7 @@ header #hero-conteiner #hero-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   text-align: left;
@@ -193,7 +193,7 @@ header #hero-conteiner #hero-img {
 
 header #hero-conteiner #hero-img img {
   position: absolute;
-  top: -40%;
+  top: -38%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -608,26 +608,51 @@ footer .attribution a {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 45vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    position: relative;
+    overflow-x: hidden;
   }
   footer #icons {
     width: 20vw;
     justify-self: flex-start;
     margin-top: 20px;
+    position: relative;
+  }
+  footer #icons .logo {
+    position: absolute;
+    left: 55px;
+    top: 10px;
+  }
+  footer #icons #icon-line {
+    position: absolute;
+    left: 50px;
+    top: 110px;
   }
   footer #links {
-    width: 50vw;
+    position: relative;
+    top: 60px;
+    width: 70vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 50%;
+    max-width: 1502px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row wrap;
-            flex-direction: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   footer #links-column {
     display: -webkit-box;
@@ -635,18 +660,50 @@ footer .attribution a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column wrap;
-            flex-direction: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center;
+    width: 50%;
+    max-width: 760px;
+    max-height: 130px;
+  }
+  footer #links-column a {
+    margin-right: auto;
+  }
+  footer .button {
+    position: relative;
+    bottom: 25px;
   }
   footer sub {
-    margin-bottom: 0;
-    color: wheat;
-  }
-  footer #atribition {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    position: relative;
+    right: -310px;
+    bottom: 55px;
+    margin: 0;
+    width: 600px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     justify-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  footer .attribution {
+    position: absolute;
+    bottom: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
