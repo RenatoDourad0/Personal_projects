@@ -25,11 +25,12 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop preview](./design/final-desktop.png)
-![Mobile preview - Hero](./design/final-mobile-1.png)
-![Mobile preview - First section](./design/final-mobile-2.png)
-![Mobile preview - Second section](./design/final-mobile-3.png)
-![Mobile preview - Footer](./design/final-mobile-4.png)
-![Mobile preview - Mobile menu](./design/final-mobile-menu.png)
+![Mobile preview - Hero](./design/mobile-top.png)
+![Mobile preview - Menu](./design/mobile-menu.png)
+![Mobile preview - Sections](./design/mobile-2.png)
+![Mobile preview - Sections](./design/mobile-3.png)
+![Mobile preview - Sections](./design/mobile-4.png)
+![Mobile preview - Footer](./design/mobile-bottom.png)
 
 
 ## My process
