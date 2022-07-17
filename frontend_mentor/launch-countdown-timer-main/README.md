@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop gif](./images/frontendMentor-countdown-1440px.gif)
-[Mobile screenShot](./images/127.0.0.1_63315_.png)
+![Desktop gif](./images/frontendMentor-countdown-1440px.gif)
+<img src='./images/127.0.0.1_63315_.png' height='1000px'>
 
 
 ### Links
@@ -48,7 +48,8 @@ Users should be able to:
 
 
 ## Author
-
+  
+  Renato Campos
 - [GitHub](https://github.com/RenatoDourad0)
 - [Linkedin](www.linkedin.com/in/renato-dourado-b1b301112)
 
