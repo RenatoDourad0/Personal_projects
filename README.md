@@ -8,6 +8,7 @@ This repository contains a reference to all personal projects developed by me.
   - [:sound: :computer: Blogr landing page](https://github.com/RenatoDourad0/Project_Blogr_Landing_Page_FrontendMentor)
   - [:sound: :computer: EasyBank landing page](https://github.com/RenatoDourad0/Project_Easybank_Landing_Page_FrontendMentor)
   - [:sound: :computer: Launch Countdown Timer](https://github.com/RenatoDourad0/Project_Launch_Countdown_Timer_FrontendMentor)
+  - [Ecommerce Product Page](https://github.com/RenatoDourad0/Project_Ecommerce_Product_Page_FrontendMentor)
 ## CodeAcademy:
 
 ## FreeCodeCamp:
