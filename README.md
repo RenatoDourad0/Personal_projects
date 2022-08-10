@@ -19,3 +19,6 @@ This repository contains a reference to all personal projects developed by me.
   - [Design Sistems](https://github.com/RenatoDourad0/Personal_projects/tree/master/codecademy/website_disgne_sistems)
 
 ## FreeCodeCamp:
+
+## Others:
+  - [Personal portfolio](https://github.com/RenatoDourad0/Portfolio)
